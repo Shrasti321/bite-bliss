@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Indian Menu</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            background-image: url("D:/Project/Templates/images/bgg.jpg");
+            background-size: cover;
+            background-position: center right; /* Adjust background position */
+            color: #1a0f0f;
+        }
+    
+        .content {
+            position: relative;
+            z-index: 1;
+            height: calc(100% - 50px); /* Adjust height to accommodate logo and menu */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+        .container {
+            padding-top: 20px; /* Adjust padding to reduce the gap */
+        }
+        /* Add your additional CSS styles here */
+        .menu-container {
+            padding: 50px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns grid */
+            gap: 20px; /* Gap between grid items */
+        }
+        .menu-heading {
+            margin-top: 30px; /* Add margin to the top of the menu heading */
+            margin-bottom: 20px; /* Add margin between menu heading and category */
+            color: rgb(255, 255, 255);
+            grid-column: 1 / -1;
+        }
+        .menu-item {
+            margin-bottom: 20px; /* Add margin to the bottom of each menu item */
+            padding: 10px;
+            width: 80%; /* Add padding to each menu item */
+            background-color: rgba(255, 255, 255, 0.8); /* Add background color with opacity */
+            border-radius: 10px; /* Add border radius */
+        }
+        .item-heading {
+            margin-bottom: 10px; /* Add margin to the bottom of each item heading */
+            color: rgb(19, 13, 13);
+        }
+        .add-to-cart {
+            background-color: #007bff; /* Blue color for button */
+            color: #fff; /* White color for text */
+            border: none; /* Remove border */
+            padding: 8px 16px; /* Add padding */
+            border-radius: 5px; /* Add border radius */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+        .logo {
+            position: absolute;
+            top: 10px; /* Adjust the top position as needed */
+            left: 10px; /* Adjust the left position as needed */
+            height: 200px; /* Adjust the height as needed */
+            z-index: 1000; /* Ensure the logo appears above other elements */
+        }
+        /* Add more specific styles for south indian page */
+        /* You can customize this section according to the content of the south indian page */
+    </style>
+</head>
+<body>
+    <img src="D:\Project\Templates\images\LOGOBB.png" alt="Logo" class="logo">
+
+    <div class="content">
+        <div class="container menu-container">
+            <h2 class="text-center menu-heading">South Indian Menu</h2>
+            
+            <!-- South Indian item 1 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Plain Dosa</h3>
+                <p>A thin crispy pancake made from fermented rice and lentil batter.</p>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Plain Dosa -->
+            </div>
+
+            <!-- South Indian item 2 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Masala Dosa</h3>
+                <p>A thin crispy pancake filled with spicy potato filling.</p>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Masala Dosa -->
+            </div>
+
+            <!-- South Indian item 3 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Idli Sambhar</h3>
+                <p>Steamed rice cakes served with lentil soup and coconut chutney.</p>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Idli Sambhar -->
+            </div>
+
+            <!-- South Indian item 4 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Vada Sambhar</h3>
+                <p>Deep-fried lentil donuts served with lentil soup and coconut chutney.</p>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Vada Sambhar -->
+            </div>
+
+            <!-- Add more south indian items as needed -->
+            
+        </div>
+    </div>
+</body>
+</html>

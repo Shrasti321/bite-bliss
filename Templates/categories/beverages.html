@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cold Drinks and Beverages Menu</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            background-image: url("D:/Project/Templates/images/bgg.jpg");
+            background-size: cover;
+            background-position: center right; /* Adjust background position */
+            color: #1a0f0f;
+        }
+    
+        .content {
+            position: relative;
+            z-index: 1;
+            height: calc(100% - 50px); /* Adjust height to accommodate logo and menu */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+        .container {
+            padding-top: 20px; /* Adjust padding to reduce the gap */
+        }
+        /* Add your additional CSS styles here */
+        .menu-container {
+            padding: 50px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns grid */
+            gap: 20px; /* Gap between grid items */
+        }
+        .menu-heading {
+            margin-top: 30px; /* Add margin to the top of the menu heading */
+            margin-bottom: 20px; /* Add margin between menu heading and category */
+            color: rgb(255, 255, 255);
+            grid-column: 1 / -1;
+        }
+        .menu-item {
+            margin-bottom: 20px; /* Add margin to the bottom of each menu item */
+            padding: 10px;
+            width: 80%; /* Add padding to each menu item */
+            background-color: rgba(255, 255, 255, 0.8); /* Add background color with opacity */
+            border-radius: 10px; /* Add border radius */
+        }
+        .item-heading {
+            margin-bottom: 10px; /* Add margin to the bottom of each item heading */
+            color: rgb(17, 11, 11);
+        }
+        .description {
+            margin-bottom: 10px; /* Add margin to the bottom of each description */
+            color: #0e0808; /* Dark color for description text */
+        }
+        .add-to-cart {
+            background-color: #007bff; /* Blue color for button */
+            color: #fff; /* White color for text */
+            border: none; /* Remove border */
+            padding: 8px 16px; /* Add padding */
+            border-radius: 5px; /* Add border radius */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+        .logo {
+            position: absolute;
+            top: 10px; /* Adjust the top position as needed */
+            left: 10px; /* Adjust the left position as needed */
+            height: 200px; /* Adjust the height as needed */
+            z-index: 1000; /* Ensure the logo appears above other elements */
+        }
+        /* Add more specific styles for Beverages page */
+        /* You can customize this section according to the content of the page */
+    </style>
+</head>
+<body>
+    <img src="D:\Project\Templates\images\LOGOBB.png" alt="Logo" class="logo">
+
+    <div class="content">
+        <div class="container menu-container">
+            <h2 class="text-center menu-heading">Cold Drinks and Beverages Menu</h2>
+            
+            <!-- Beverage item 1 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Coca Cola</h3>
+                <div class="description">
+                    <p>Classic Coca Cola soft drink, refreshing and bubbly.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Coca Cola -->
+            </div>
+
+            <!-- Beverage item 2 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Pepsi</h3>
+                <div class="description">
+                    <p>Popular Pepsi cola soft drink, perfect for quenching your thirst.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Pepsi -->
+            </div>
+
+            <!-- Beverage item 3 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Maza</h3>
+                <div class="description">
+                    <p>Maza, a refreshing mango flavored drink, ideal for hot days.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Maza -->
+            </div>
+
+            <!-- Beverage item 4 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Paperboat</h3>
+                <div class="description">
+                    <p>Paperboat, a range of natural fruit drinks, packed with flavor.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Paperboat -->
+            </div>
+
+            <!-- Beverage item 5 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Hot Coffee</h3>
+                <div class="description">
+                    <p>Hot Coffee, freshly brewed and aromatic, perfect for coffee lovers.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Hot Coffee -->
+            </div>
+
+            <!-- Beverage item 6 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Chai</h3>
+                <div class="description">
+                    <p>Chai, a traditional Indian tea, served hot with spices and milk.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Chai -->
+            </div>
+
+            <!-- Beverage item 7 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Water</h3>
+                <div class="description">
+                    <p>Refreshing cold water to quench your thirst and keep you hydrated.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Water -->
+            </div>
+
+            <!-- Add more beverage items as needed -->
+            
+        </div>
+    </div>
+</body>
+</html>

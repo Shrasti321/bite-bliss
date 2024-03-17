@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            background-image: url("D:/Project/Templates/images/login.jpg"); /* Replace 'path/to/your/image.jpg' with the path to your image */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+            color: #000000; /* Change text color to contrast with the background */
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            margin-top: 150px; /* Adjust the margin-top to move the box down */
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.2); /* Transparent white background for card */
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card-body {
+            padding: 2rem;
+        }
+        .form-control {
+            background-color: rgba(255, 255, 255, 0.3); /* Transparent white background for form controls */
+            border-color: transparent;
+            color: #fff; /* Form control text color */
+        }
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.5); /* Placeholder text color */
+        }
+        .btn-primary {
+            background-color: #3498db; /* Primary button color */
+            border-color: #3498db;
+        }
+        .btn-primary:hover {
+            background-color: #000000; /* Button color on hover */
+            border-color: #2980b9;
+        }
+        .btn-primary:focus {
+            box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.5); /* Button focus outline color */
+        }
+        .logo {
+            position: absolute;
+            top: 10px; /* Adjust the top position as needed */
+            left: 10px; /* Adjust the left position as needed */
+            height: 250px; /* Adjust the height as needed */
+            z-index: 1000; /* Ensure the logo appears above other elements */
+        }
+    </style>
+</head>
+<body>
+    <img src="D:\Project\Templates\images\LOGOBB.png" alt="Logo" class="logo">
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card login-container"> <!-- Add login-container class -->
+                <div class="card-body">
+                    <h3 class="text-center mb-4">Welcome To Bite Bliss</h3>
+                    <form action="{{ url_for('login') }}" method="post">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember Me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

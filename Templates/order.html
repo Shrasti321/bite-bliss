@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            background-image: url('D:/Project/Templates/images/bgg.jpg');
+            background-size: cover;
+            color: #f7e5e5;
+        }
+        .cart-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .cart-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .cart-item .name {
+            font-weight: bold;
+        }
+        .cart-item .price {
+            color: #007bff;
+        }
+        .cart-item .quantity {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .total {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .quantity-control {
+            display: flex;
+            align-items: center;
+        }
+        .quantity-label {
+            margin-right: 10px;
+        }
+        .checkout-btn{
+            text-align: left;
+            margin-left: 210px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 class=" text align: left">Your Cart</h2>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="cart-item">
+                <img src="burger.jpg" alt="Burger">
+                <div class="name">Burger</div>
+                <div class="description">Delicious burger with fresh veggies and juicy patty.</div>
+                <div class="price">$5</div>
+                <div class="quantity-control">
+                    <label class="quantity-label">Quantity:</label>
+                    <input type="number" class="form-control" value="2" min="1">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="cart-item">
+                <img src="pizza.jpg" alt="Pizza">
+                <div class="name">Pizza</div>
+                <div class="description">Tasty pizza with a variety of toppings to choose from.</div>
+                <div class="price">$10</div>
+                <div class="quantity-control">
+                    <label class="quantity-label">Quantity:</label>
+                    <input type="number" class="form-control" value="1" min="1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="checkout-btn mt-4 ">
+        <button class="btn btn-primary">Proceed to Checkout</button>
+    </div>
+</div>
+
+</body>
+</html>

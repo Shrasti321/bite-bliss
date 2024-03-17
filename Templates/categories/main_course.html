@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Course Menu</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            background-image: url("D:/Project/Templates/images/bgg.jpg");
+            background-size: cover;
+            background-position: center right; /* Adjust background position */
+            color: #1a0f0f;
+        }
+    
+        .content {
+            position: relative;
+            z-index: 1;
+            height: calc(100% - 50px); /* Adjust height to accommodate logo and menu */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+        .container {
+            padding-top: 20px; /* Adjust padding to reduce the gap */
+        }
+        /* Add your additional CSS styles here */
+        .menu-container {
+            padding: 50px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns grid */
+            gap: 20px; /* Gap between grid items */
+        }
+        .menu-heading {
+            margin-top: 30px; /* Add margin to the top of the menu heading */
+            margin-bottom: 20px; /* Add margin between menu heading and category */
+            color: rgb(255, 255, 255);
+            grid-column: 1 / -1;
+        }
+        .menu-item {
+            margin-bottom: 20px; /* Add margin to the bottom of each menu item */
+            padding: 10px;
+            width: 80%; /* Add padding to each menu item */
+            background-color: rgba(255, 255, 255, 0.8); /* Add background color with opacity */
+            border-radius: 10px; /* Add border radius */
+        }
+        .item-heading {
+            margin-bottom: 10px; /* Add margin to the bottom of each item heading */
+            color: rgb(16, 10, 10);
+        }
+        .description {
+            margin-bottom: 10px; /* Add margin to the bottom of each description */
+            color: #333; /* Dark color for description text */
+        }
+        .add-to-cart {
+            background-color: #007bff; /* Blue color for button */
+            color: #fff; /* White color for text */
+            border: none; /* Remove border */
+            padding: 8px 16px; /* Add padding */
+            border-radius: 5px; /* Add border radius */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+        .logo {
+            position: absolute;
+            top: 10px; /* Adjust the top position as needed */
+            left: 10px; /* Adjust the left position as needed */
+            height: 200px; /* Adjust the height as needed */
+            z-index: 1000; /* Ensure the logo appears above other elements */
+        }
+        /* Add more specific styles for Paratha page */
+        /* You can customize this section according to the content of the Paratha page */
+    </style>
+</head>
+<body>
+    <img src="D:\Project\Templates\images\LOGOBB.png" alt="Logo" class="logo">
+
+    <div class="content">
+        <div class="container menu-container">
+            <h2 class="text-center menu-heading">Main Course</h2>
+            
+            <!-- Paratha item 1 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Aloo Parathas</h3>
+                <p class="description">Delicious parathas stuffed with spiced mashed potatoes.</p>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Aloo Parathas -->
+            </div>
+
+            <!-- Paratha item 2 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Paneer Parathas</h3>
+                <p class="description">Parathas filled with flavorful paneer filling.</p>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Paneer Parathas -->
+            </div>
+
+            <!-- Paratha item 3 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Special Veg Parathas</h3>
+                <p class="description">Special parathas stuffed with a variety of mixed vegetables.</p>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Special Veg Parathas -->
+            </div>
+
+            <!-- Paratha item 4 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Plain Parathas</h3>
+                <p class="description">Simple and delicious plain parathas.</p>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Plain Parathas -->
+            </div>
+
+            <!-- Thali item 1 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Special Thali</h3>
+                <p class="description">A grand platter with a variety of dishes, perfect for a hearty meal.</p>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Special Thali -->
+            </div>
+
+            <!-- Thali item 2 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Regular Thali</h3>
+                <p class="description">A standard meal platter with balanced portions of main dishes and sides.</p>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Regular Thali -->
+            </div>
+
+
+            <!-- Add more Paratha items as needed -->
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chips and Chocolates Menu</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            background-image: url("D:/Project/Templates/images/bgg.jpg");
+            background-size: cover;
+            background-position: center right; /* Adjust background position */
+            color: #1a0f0f;
+        }
+    
+        .content {
+            position: relative;
+            z-index: 1;
+            height: calc(100% - 50px); /* Adjust height to accommodate logo and menu */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+        .container {
+            padding-top: 20px; /* Adjust padding to reduce the gap */
+        }
+        /* Add your additional CSS styles here */
+        .menu-container {
+            padding: 50px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns grid */
+            gap: 20px; /* Gap between grid items */
+        }
+        .menu-heading {
+            margin-top: 30px; /* Add margin to the top of the menu heading */
+            margin-bottom: 20px; /* Add margin between menu heading and category */
+            color: rgb(255, 255, 255);
+            grid-column: 1 / -1;
+        }
+        .menu-item {
+            margin-bottom: 20px; /* Add margin to the bottom of each menu item */
+            padding: 10px;
+            width: 80%; /* Add padding to each menu item */
+            background-color: rgba(255, 255, 255, 0.8); /* Add background color with opacity */
+            border-radius: 10px; /* Add border radius */
+        }
+        .item-heading {
+            margin-bottom: 10px; /* Add margin to the bottom of each item heading */
+            color: rgb(14, 8, 8);
+        }
+        .description {
+            margin-bottom: 10px; /* Add margin to the bottom of each description */
+            color: #130a0a; /* Dark color for description text */
+        }
+        .add-to-cart {
+            background-color: #007bff; /* Blue color for button */
+            color: #fff; /* White color for text */
+            border: none; /* Remove border */
+            padding: 8px 16px; /* Add padding */
+            border-radius: 5px; /* Add border radius */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+        .logo {
+            position: absolute;
+            top: 10px; /* Adjust the top position as needed */
+            left: 10px; /* Adjust the left position as needed */
+            height: 200px; /* Adjust the height as needed */
+            z-index: 1000; /* Ensure the logo appears above other elements */
+        }
+        /* Add more specific styles for Chips and Chocolates page */
+        /* You can customize this section according to the content of the page */
+    </style>
+</head>
+<body>
+    <img src="D:\Project\Templates\images\LOGOBB.png" alt="Logo" class="logo">
+
+    <div class="content">
+        <div class="container menu-container">
+            <h2 class="text-center menu-heading">Chips and Chocolates Menu</h2>
+            
+            <!-- Chips item 1 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Onion Chips</h3>
+                <div class="description">
+                    <p>Crunchy chips flavored with savory onion seasoning.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Onion Chips -->
+            </div>
+
+            <!-- Chips item 2 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Tomato Chips</h3>
+                <div class="description">
+                    <p>Delicious chips made from real tomatoes, bursting with tangy flavor.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Tomato Chips -->
+            </div>
+
+            <!-- Chips item 3 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Peri Peri Chips</h3>
+                <div class="description">
+                    <p>Spicy and fiery chips seasoned with peri peri spices.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Peri Peri Chips -->
+            </div>
+
+            <!-- Chips item 4 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Salted Chips</h3>
+                <div class="description">
+                    <p>Classic chips seasoned with a sprinkle of salt, perfect for snacking.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Salted Chips -->
+            </div>
+
+            <!-- Chips item 5 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Regular Chips</h3>
+                <div class="description">
+                    <p>The all-time favorite, simple and crispy potato chips.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Regular Chips -->
+            </div>
+
+            <!-- Chocolate item 1 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Dairy Milk Silk Hazelnut</h3>
+                <div class="description">
+                    <p>Creamy milk chocolate with crunchy hazelnut pieces, a delightful combination.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Dairy Milk Silk Hazelnut -->
+            </div>
+
+            <div class="menu-item">
+                <h3 class="item-heading">Ferror Rocher</h3>
+                <div class="description">
+                    <p>Premium chocolate with delicious taste.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Dairy Milk Silk Hazelnut -->
+            </div>
+
+            <div class="menu-item">
+                <h3 class="item-heading">Silk Fruits and Nuts</h3>
+                <p class="description">Rich and creamy milk chocolate with dried fruits and nuts.</p>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Silk Fruits and Nuts -->
+            </div>
+
+            <!-- Chocolate item 4 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Silk Crackers</h3>
+                <p class="description">Smooth and velvety milk chocolate with crunchy biscuit pieces.</p>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Silk Crackers -->
+            </div>
+                    
+        </div>
+    </div>
+</body>
+</html>

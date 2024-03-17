@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appetizers Menu</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            background-image: url("D:/Project/Templates/images/bgg.jpg");
+            background-size: cover;
+            background-position: center right; /* Adjust background position */
+            color: #1a0f0f;
+        }
+    
+        .content {
+            position: relative;
+            z-index: 1;
+            height: calc(100% - 50px); /* Adjust height to accommodate logo and menu */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+        .container {
+            padding-top: 20px; /* Adjust padding to reduce the gap */
+        }
+        /* Add your additional CSS styles here */
+        .menu-container {
+            padding: 50px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns grid */
+            gap: 20px; /* Gap between grid items */
+        }
+        .menu-heading {
+            margin-top: 30px; /* Add margin to the top of the menu heading */
+            margin-bottom: 20px; /* Add margin between menu heading and category */
+            color: rgb(255, 255, 255);
+            grid-column: 1 / -1;
+        }
+        .menu-item {
+            margin-bottom: 20px; /* Add margin to the bottom of each menu item */
+            padding: 10px;
+            width: 80%; /* Add padding to each menu item */
+            background-color: rgba(255, 255, 255, 0.8); /* Add background color with opacity */
+            border-radius: 10px; /* Add border radius */
+        }
+        .item-heading {
+            margin-bottom: 10px; /* Add margin to the bottom of each item heading */
+            color: rgb(14, 10, 10);
+        }
+        .description {
+            margin-bottom: 10px; /* Add margin to the bottom of each description */
+            color: #110a0a; /* Dark color for description text */
+        }
+        .add-to-cart {
+            background-color: #007bff; /* Blue color for button */
+            color: #fff; /* White color for text */
+            border: none; /* Remove border */
+            padding: 8px 16px; /* Add padding */
+            border-radius: 5px; /* Add border radius */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+        .logo {
+            position: absolute;
+            top: 10px; /* Adjust the top position as needed */
+            left: 10px; /* Adjust the left position as needed */
+            height: 200px; /* Adjust the height as needed */
+            z-index: 1000; /* Ensure the logo appears above other elements */
+        }
+        /* Add more specific styles for Appetizers page */
+        /* You can customize this section according to the content of the page */
+    </style>
+</head>
+<body>
+    <img src="D:\Project\Templates\images\LOGOBB.png" alt="Logo" class="logo">
+
+    <div class="content">
+        <div class="container menu-container">
+            <h2 class="text-center menu-heading">Appetizers Menu</h2>
+            
+            <!-- Appetizer item 1 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Maggi</h3>
+                <div class="description">
+                    <p>The classic Maggi noodles served hot and flavorful.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Maggi -->
+            </div>
+
+            <!-- Appetizer item 2 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Veg Maggi</h3>
+                <div class="description">
+                    <p>Maggi noodles cooked with a variety of fresh vegetables.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Veg Maggi -->
+            </div>
+
+            <!-- Appetizer item 3 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Cheese Maggi</h3>
+                <div class="description">
+                    <p>Maggi noodles topped with melted cheese for a creamy indulgence.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Cheese Maggi -->
+            </div>
+
+            <!-- Appetizer item 4 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Cheese Veg Maggi</h3>
+                <div class="description">
+                    <p>Maggi noodles cooked with vegetables and generous amounts of cheese.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Cheese Veg Maggi -->
+            </div>
+
+            <!-- Appetizer item 5 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Red Sauce Pasta</h3>
+                <div class="description">
+                    <p>Pasta served with tangy and flavorful red sauce.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Red Sauce Pasta -->
+            </div>
+
+            <!-- Appetizer item 6 -->
+            <div class="menu-item">
+                <h3 class="item-heading">White Sauce Pasta</h3>
+                <div class="description">
+                    <p>Pasta served with creamy and rich white sauce.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for White Sauce Pasta -->
+            </div>
+
+            <!-- Appetizer item 7 -->
+            <div class="menu-item">
+                <h3 class="item-heading">French Fries</h3>
+                <div class="description">
+                    <p>Crispy and golden French fries served hot and delicious.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for French Fries -->
+            </div>
+
+            <!-- Add more appetizer items as needed -->
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            background-image: url("D:/Project/Templates/images/spaghetti-1932466_1280 (1).jpg");
+            background-size: cover;
+            color: #1a0f0f;
+            background-position: 40%;
+        }
+    
+        .content {
+            position: relative;
+            z-index: 1;
+            height: calc(100% - 50px);
+            overflow-y: auto;
+        }
+        .container {
+            padding-top: 50px;
+        }
+        .menu-container {
+            padding: 50px;
+            display: grid;
+            gap: -50px;
+        }
+        .menu-heading {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            color: rgb(231, 231, 226);
+        }
+        .menu-category {
+            margin-bottom: 50px;
+        }
+        .category-heading {
+            margin-bottom: 20px;
+            color: rgb(24, 24, 17);
+        }
+        .category-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            width: 70%; /* Adjust the width as needed */
+            border-radius: 10px;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            height: 200px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <img src="D:\Project\Templates\images\LOGOBB.png" alt="Logo" class="logo">
+
+    <div class="content">
+        <div class="container menu-container">
+            <h2 class="text-center menu-heading">MENU</h2>
+            
+            <!-- Link to Snacks Category Page -->
+            <div class="menu-category">
+                <div class="category-container">
+                    <h3 class="category-heading">Indian Snacks</h3>
+                    <a href="Indiansnacks.html">View Snacks</a>
+                </div>
+            </div>
+
+            <!-- Link to Main Course Category Page -->
+            <div class="menu-category">
+                <div class="category-container">
+                    <h3 class="category-heading">Main Course</h3>
+                    <a href="main_course.html">View Main Course</a>
+                </div>
+            </div>
+
+            <!-- Link to Desserts Category Page -->
+            <div class="menu-category">
+                <div class="category-container">
+                    <h3 class="category-heading">Desserts</h3>
+                    <a href="desserts.html">View Desserts</a>
+                </div>
+            </div>
+
+            <!-- Link to Chinese Category Page -->
+            <div class="menu-category">
+                <div class="category-container">
+                    <h3 class="category-heading">Chinese</h3>
+                    <a href="southindian.html">View Chinese</a>
+                </div>
+            </div>
+
+            <!-- Link to Sandwiches and Burger Category Page -->
+            <div class="menu-category">
+                <div class="category-container">
+                    <h3 class="category-heading">Sandwiches and Burger</h3>
+                    <a href="sandwiches.html">View sandwiches and burger</a>
+                </div>
+            </div>
+
+            <!-- Link to Appetizers Category Page -->
+            <div class="menu-category">
+                <div class="category-container">
+                    <h3 class="category-heading">Appetizers</h3>
+                    <a href="appetizers.html">View Appetizers</a>
+                </div>
+            </div>
+
+            <!-- Link to Chips and Chocolates Category Page -->
+            <div class="menu-category">
+                <div class="category-container">
+                    <h3 class="category-heading">Chips and Chocolates</h3>
+                    <a href="chip_chocolate.html">View Chips and Chocolates</a>
+                </div>
+            </div>
+
+            <!-- Link to Ice Cream Category Page -->
+            <div class="menu-category">
+                <div class="category-container">
+                    <h3 class="category-heading">Ice Cream</h3>
+                    <a href="icecream.html">View ice cream</a>
+                </div>
+            </div>
+
+            <!-- Link to Cold Drinks and Beverages Category Page -->
+            <div class="menu-category">
+                <div class="category-container">
+                    <h3 class="category-heading">Cold Drinks and Beverages</h3>
+                    <a href="beverages.html">View cold drink and beverages</a>
+                </div>
+            </div>
+
+            <!-- Add more category links as needed -->
+            
+        </div>
+    </div>
+</body>
+</html>

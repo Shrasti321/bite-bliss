@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandwiches and Burgers Menu</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            background-image: url("D:/Project/Templates/images/bgg.jpg");
+            background-size: cover;
+            background-position: center right; /* Adjust background position */
+            color: #1a0f0f;
+        }
+    
+        .content {
+            position: relative;
+            z-index: 1;
+            height: calc(100% - 50px); /* Adjust height to accommodate logo and menu */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+        .container {
+            padding-top: 20px; /* Adjust padding to reduce the gap */
+        }
+        /* Add your additional CSS styles here */
+        .menu-container {
+            padding: 50px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns grid */
+            gap: 20px; /* Gap between grid items */
+        }
+        .menu-heading {
+            margin-top: 30px; /* Add margin to the top of the menu heading */
+            margin-bottom: 20px; /* Add margin between menu heading and category */
+            color: rgb(255, 255, 255);
+            grid-column: 1 / -1;
+        }
+        .menu-item {
+            margin-bottom: 20px; /* Add margin to the bottom of each menu item */
+            padding: 10px;
+            width: 80%; /* Add padding to each menu item */
+            background-color: rgba(255, 255, 255, 0.8); /* Add background color with opacity */
+            border-radius: 10px; /* Add border radius */
+        }
+        .item-heading {
+            margin-bottom: 10px; /* Add margin to the bottom of each item heading */
+            color: rgb(14, 8, 8);
+        }
+        .description {
+            margin-bottom: 10px; /* Add margin to the bottom of each description */
+            color: #120b0b; /* Dark color for description text */
+        }
+        .add-to-cart {
+            background-color: #007bff; /* Blue color for button */
+            color: #fff; /* White color for text */
+            border: none; /* Remove border */
+            padding: 8px 16px; /* Add padding */
+            border-radius: 5px; /* Add border radius */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+        .logo {
+            position: absolute;
+            top: 10px; /* Adjust the top position as needed */
+            left: 10px; /* Adjust the left position as needed */
+            height: 200px; /* Adjust the height as needed */
+            z-index: 1000; /* Ensure the logo appears above other elements */
+        }
+        /* Add more specific styles for Sandwiches and Burgers page */
+        /* You can customize this section according to the content of the page */
+    </style>
+</head>
+<body>
+    <img src="D:\Project\Templates\images\LOGOBB.png" alt="Logo" class="logo">
+
+    <div class="content">
+        <div class="container menu-container">
+            <h2 class="text-center menu-heading">Sandwiches and Burgers Menu</h2>
+            
+            <!-- Sandwich item 1 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Masala Sandwich</h3>
+                <div class="description">
+                    <p>Spicy and flavorful sandwich with a masala filling, perfect for a quick snack.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Masala Sandwich -->
+            </div>
+
+            <!-- Sandwich item 2 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Paneer Sandwich</h3>
+                <div class="description">
+                    <p>Sandwich filled with delicious paneer cubes, a vegetarian delight.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Paneer Sandwich -->
+            </div>
+
+            <!-- Sandwich item 3 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Cheese Chutney Sandwich</h3>
+                <div class="description">
+                    <p>A classic sandwich with cheese and tangy chutney, a burst of flavors in every bite.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Cheese Chutney Sandwich -->
+            </div>
+
+            <!-- Sandwich item 4 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Veg Grilled Sandwich</h3>
+                <div class="description">
+                    <p>Healthy and tasty sandwich with a variety of vegetables, grilled to perfection.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Veg Grilled Sandwich -->
+            </div>
+
+            <!-- Sandwich item 5 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Cheese Grilled Sandwich</h3>
+                <div class="description">
+                    <p>Indulgent sandwich with gooey melted cheese, a treat for cheese lovers.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Cheese Grilled Sandwich -->
+            </div>
+
+            <!-- Burger item 1 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Veg Burger</h3>
+                <div class="description">
+                    <p>Classic vegetarian burger with a patty made from mixed vegetables.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Veg Burger -->
+            </div>
+
+            <!-- Burger item 2 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Aloo Tikki Burger</h3>
+                <div class="description">
+                    <p>Burger featuring a crispy potato patty, a popular street food choice.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Aloo Tikki Burger -->
+            </div>
+
+            <!-- Burger item 3 -->
+            <div class="menu-item">
+                <h3 class="item-heading">Veg Cheese Burger</h3>
+                <div class="description">
+                    <p>Delicious burger loaded with cheese, perfect for cheese enthusiasts.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button> <!-- Add button for Veg Cheese Burger -->
+            </div>
+
+            <!-- Add more sandwich and burger items as needed -->
+            
+        </div>
+    </div>
+</body>
+</html>
